@@ -1,0 +1,24 @@
+{
+  "name": "dingding-assistant",
+  "version": "1.0.0",
+  "description": "dingding group assistant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xbrave/dingding-assistant.git"
+  },
+  "keywords": ["dingding", "dingding robot"],
+  "author": "xbrave",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xbrave/dingding-assistant/issues"
+  },
+  "homepage": "https://github.com/xbrave/dingding-assistant#readme",
+  "dependencies": {
+    "dingtalk-robot-sender": "^1.2.0",
+    "node-schedule": "^2.0.0"
+  }
+}
