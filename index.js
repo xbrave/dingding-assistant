@@ -20,7 +20,7 @@ function createRobot(token) {
   });
 }
 
-function createSchedule(cronFormatStr, jobs, jobsName) {
+function createSchedule(cronFormatStr, jobs, jobsName) { ss
   schedule.scheduleJob(cronFormatStr, () => {
     console.log(jobsName + ':' + new Date());
     jobs();
@@ -28,8 +28,8 @@ function createSchedule(cronFormatStr, jobs, jobsName) {
 }
 
 function schedules() {
-  createSchedule('* 57 11 * * *', eatAssistantRobot, '提醒吃饭小助手');
-  createSchedule('* 57 17 * * *', eatAssistantRobot, '提醒吃饭小助手');
+  createSchedule('0 58 11 * * *', eatAssistantRobot, '提醒吃饭小助手');
+  createSchedule('0 58 17 * * *', eatAssistantRobot, '提醒吃饭小助手');
 }
 
 schedules();
