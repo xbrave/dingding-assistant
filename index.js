@@ -29,7 +29,7 @@ function createRobot(token) {
   });
 }
 
-function createSchedule(cronFormatStr, jobs, jobsName) { ss
+function createSchedule(cronFormatStr, jobs, jobsName) {
   schedule.scheduleJob(cronFormatStr, () => {
     console.log(jobsName + ':' + new Date());
     jobs();
